@@ -13,7 +13,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{5D34858F-F5A6-4D67-9D5A-5AFCCA0FFE66}" Name="TC3_ECC203_PLC" PrjFilePath="TC3_ECC203_PLC\TC3_ECC203_PLC.plcproj" TmcFilePath="TC3_ECC203_PLC\TC3_ECC203_PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E70B0C84-5A95-5320-000D-2CE382D9A5FD}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="TC3_ECC203_PLC\TC3_ECC203_PLC.tmc" TmcHash="{E70B0C84-5A95-5320-000D-2CE382D9A5FD}">
 					<Name>TC3_ECC203_PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
