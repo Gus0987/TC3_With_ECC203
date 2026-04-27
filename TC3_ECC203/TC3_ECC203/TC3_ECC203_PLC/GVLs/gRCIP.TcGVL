@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
-  <GVL Name="gvCB1" Id="{5fd4771f-e64f-4571-a7a4-edbca316e7ba}">
+  <GVL Name="gRCIP" Id="{4dd80979-f07f-4854-a16c-7aead9c158e3}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	cSteps:	ARRAY[0..99] OF scRCIP;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

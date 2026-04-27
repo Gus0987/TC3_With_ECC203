@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
+  <DUT Name="scRCIP" Id="{90e923f4-ae6d-4fde-9775-3d9ef0500d78}">
+    <Declaration><![CDATA[TYPE scRCIP :
+STRUCT
+	tmStepProc:		INT;	// Unit: 0.1 Sec
+	nStpSpinSpd:	DINT;	// int -65535~65535
+	nStpSpinACC:	DINT;	// Spin Acc R/sec
+	mStpArmMap:		WORD;	// bit 0~7 = Arm 1~8
+	nStpArmPFL:		UINT;	// Arm Profile Index
+	mMediaMap:		LWORD;	// Media Bitmap Word0~3
+	mStpAction:		WORD;
+	mStpRingClean:	WORD;	// Ring Clean Map
+	mStpEndFlag	:	WORD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
