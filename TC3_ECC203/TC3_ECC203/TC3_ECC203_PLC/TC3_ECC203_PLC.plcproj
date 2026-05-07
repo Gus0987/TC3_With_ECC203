@@ -35,6 +35,18 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Sys\JsonProcess.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Sys\JsonProfile.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Sys\PresisProcess.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Sys\PresisProfile.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Sys\RegProcess.TcPOU">
       <SubType>Code</SubType>
     </Compile>

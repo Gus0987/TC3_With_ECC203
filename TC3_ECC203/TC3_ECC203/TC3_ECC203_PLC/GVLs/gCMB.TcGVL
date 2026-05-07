@@ -2,6 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
   <GVL Name="gCMB" Id="{5fd4771f-e64f-4571-a7a4-edbca316e7ba}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'pack_size' := '1'}
 VAR_GLOBAL
 END_VAR]]></Declaration>
   </GVL>
