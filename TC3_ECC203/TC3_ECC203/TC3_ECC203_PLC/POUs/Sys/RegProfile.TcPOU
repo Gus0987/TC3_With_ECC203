@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
+  <POU Name="RegProfile" Id="{68da0f50-b31c-483b-bf1c-ef6b3e62b1b0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM RegProfile
+VAR
+	RootKey			: STRING	:= 'HK_LOCAL_MACHINE\';
+	REQ			: DWORD			:= 16#00000000;
+	STA			: DWORD			:= 16#00000000;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Load" Id="{a75cbe35-31af-4999-847c-2f46752578b2}">
+      <Declaration><![CDATA[METHOD PUBLIC Load : DWORD
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Save" Id="{5e67ca8f-cebf-4a74-9caa-e27edd39a4eb}">
+      <Declaration><![CDATA[METHOD PUBLIC Save : DWORD
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Update" Id="{d66ead6e-3bed-4262-bc53-504c81bb5429}">
+      <Declaration><![CDATA[METHOD PUBLIC Update : DWORD
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="RegProfile">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="RegProfile.Load">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="RegProfile.Save">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="RegProfile.Update">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

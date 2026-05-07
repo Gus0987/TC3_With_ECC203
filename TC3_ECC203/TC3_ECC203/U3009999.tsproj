@@ -1,5 +1,43 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.71">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000008}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..7] OF BYTE</Name>
+			<BitSize>64</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000F}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..14] OF BIT</Name>
+			<BitSize>15</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>15</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b000010000000000000000406040004fefc003c423c006c6a6c00e4e2e4003c3a3c005c5a5c007c7a7c00ff00ff000000000000000000000000000000000000000000000000000000000088400000000048888840000557704888884051055550488888400005537048888840510055504888884000005770488888405105555048888840000555504888884051005370488888400005555048888843555000004888884555500000488888455550000048888846626666664888</ImageData>
+		<ImageData Id="1001">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b0000100000000000000004060400ffffff005c5a5c003c3a3c00ff00ff007c7a7c00047efc0004defc00000000000000000000000000000000000000000000000000000000000000000044000000000000044400200020002004440020002000200444002000200020044400200020002004440020002000200444002000200020044400000000000004440777011106660444077701110666044407770111066604440777011106660444077701110666044402220222022204</ImageData>
+		<ImageData Id="1002">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b0000100000000000000004060400ff00ff00047efc005c5a5c003c3a3c007c7a7c000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000011111111005445001111111100555500111111110054450011111111005555001111111100544500111111110055550011111111000000001111111102222220111111110222222011111111022222201111111102222220111111110222222011111111033333301111</ImageData>
+		<ImageData Id="1003">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b00001000000000000000040604007c7a7c00ff00ff003c3a3c0004defc005c5a5c000000000000000000000000000000000000000000000000000000000000000000000000000000000022220000000022222222001331002222222200111100222222220013310022222222001111002222222200133100222222220011110022222222000000002222222204444440222222220444444022222222044444402222222204444440222222220444444022222222055555502222</ImageData>
+		<ImageData Id="1004">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b0000100000000000000004060400ffffff005c5a5c003c3a3c00ff00ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044440000000044444444002332004444444400222200444444440023320044444444002222004444444400233200444444440022220044444444000000004444444401111110444444440111111044444444011111104444444401111110444444440111111044444444022222204444</ImageData>
+		<ImageData Id="1005">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b00001000000000000000040604005fb058005c5a5c003c3a3c00ff00ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044440000000044444444002332004444444400222200444444440023320044444444002222004444444400233200444444440022220044444444000000004444444401111110444444440111111044444444011111104444444401111110444444440111111044444444022222204444</ImageData>
+		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000130b0000130b0000100000000000000004060400e4e2e4005c5a5c000402d4003c3a3c00ff00ff007c7a7c0000000000000000000000000000000000000000000000000000000000000000000000000055550000000055555555006446005555555500666600555555550064460055555555006666005555555500644600555555550066660055555555000000005555555503333330555555550333333055555555033333305555555503333330555555550333333055555555022222205555</ImageData>
+	</ImageDatas>
 	<Project ProjectGUID="{491CEE96-D5E8-41C7-AB1F-CAA7869A58E7}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
 			<Settings>
@@ -33,5 +71,1393 @@
 				</Instance>
 			</Project>
 		</Plc>
+		<Io>
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="192.168.105.29.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
+				<Name>Device 1 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>A? (Realtek PCIe GbE Family Controller)</DeviceDesc>
+						<DeviceName>\DEVICE\{0AA343EC-10A3-4A5F-8799-AC625D81BD87}</DeviceName>
+						<DeviceData>109819dbc43d</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Box 1 (NX-ECC203)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="13" VendorId="#x00000083" ProductCode="#x000000aa" RevisionNo="#x00010007" InfoDataAddr="true" InfoDataDcTimes="true" EnableWdDivider0400="true" EnableWdTime0410="true" EnableWdTime0420="true" TimeoutStateChange1="65535" TimeoutStateChange2="60000" TimeoutStateChange3="60000" TimeoutStateChange4="60000" TimeoutMailbox2="60000" PortPhys="17" IdentificationAdo="18" MaxSlotCount="63" SlotPdoIncrement="4" SlotIndexIncrement="32" Type="NX-ECC203 EtherCAT coupler V1.7" Desc="NX-ECC203" PortABoxInfo="#x00ffffff">
+						<SyncMan>002800012600010001000000000100010001002826010000</SyncMan>
+						<SyncMan>002a00012200010002000000000100010001002a22010000</SyncMan>
+						<SyncMan>001000006400000003000000000000040000001064010000</SyncMan>
+						<SyncMan>001c12000000010004000000000000040000001c00010000</SyncMan>
+						<Fmmu>0000000000000000000000020000000001000000020000000200000000000000</Fmmu>
+						<Fmmu>0000000000000000001c00010100000002000000020000000300000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<DcData>0003000000000000000000000000000001000000000000000000000000000000</DcData>
+						<DcMode>444353796e6330776974685368696600444320666f722073796e6368726f6e697a6174696f6e00000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>4443776974684379636c6554696d650044432077697468207072696f7269747920696e206379636c652074696d650000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>4672656572756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<MBoxUserCmdData>020003000900000000000000030000000000000000000000000000000000000020022002010000000100</MBoxUserCmdData>
+						<Pdo Name="505th transmit PDO Mapping" Index="#x1bf8" Flags="#x0000" SyncMan="3">
+							<Entry Name="NX Unit Registration Status 63" Index="#x3003" Sub="#x03">
+								<Type GUID="{18071995-0000-0000-0000-000300000008}">ARRAY [0..7] OF BYTE</Type>
+							</Entry>
+							<Entry Name="NX Unit I/O Data Active Status 63" Index="#x3006" Sub="#x03">
+								<Type GUID="{18071995-0000-0000-0000-000300000008}">ARRAY [0..7] OF BYTE</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="511th transmit PDO Mapping" Index="#x1bfe" Flags="#x0010">
+							<Entry Name="New Message Available" Index="#x10f3" Sub="#x04">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Padding">
+								<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="512th transmit PDO Mapping" Index="#x1bff" Flags="#x0010" SyncMan="3">
+							<Entry Name="Sysmac Error Status" Index="#x2002" Sub="#x01">
+								<Type>USINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="501st transmit PDO Mapping" Index="#x1bf4" Flags="#x0010" SyncMan="3">
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="5001"/>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<Slot Name="NX Series Terminals" ImageId="1001">
+							<SlotData>0000000001000000040000002000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="Digital In" Name="General input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital In(Time Stamp type)" Name="General input time stamp type" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Digital Out" Name="General output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Out(Time Stamp type)" Name="General output time stamp type" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Digital Mix" Name="General mix" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Analog In" Name="Analog input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Analog Out" Name="Analog output" VendorId="131" ImageId="1003"/>
+							<ModuleClass Class="Heater Burnout Detect" Name="Heater Burnout Detect" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Load Cell Input" Name="Load Cell Input" VendorId="131" ImageId="1002"/>
+							<ModuleClass Class="Position Interface" Name="Position Interface" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Temperature Control" Name="Temperature Control" VendorId="131" ImageId="1004"/>
+							<ModuleClass Class="Serial Communication" Name="Serial Communication" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="RFID" Name="RFID" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="IO-Link" Name="IO-Link" VendorId="131" ImageId="1005"/>
+							<ModuleClass Class="Safety CPU" Name="Safety CPU Unit" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital In" Name="Safety Digital input" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="Safety Digital Out" Name="Safety Digital output" VendorId="131" ImageId="1006"/>
+							<ModuleClass Class="System Unit" Name="System Unit" VendorId="131" ImageId="1004"/>
+						</Slot>
+						<ModulePdoGroup>0200f417f41b00000000000000000000</ModulePdoGroup>
+						<ModulePdoGroup>0200f517f51b00000000000000000000</ModulePdoGroup>
+						<ModulePdoGroup>0200f617f61b00000000000000000000</ModulePdoGroup>
+						<ModulePdoGroup>0200f717f71b00000000000000000000</ModulePdoGroup>
+					</EtherCAT>
+				</Box>
+				<EtherCAT DcSyncMode="3"/>
+			</Device>
+		</Io>
 	</Project>
 </TcSmProject>
